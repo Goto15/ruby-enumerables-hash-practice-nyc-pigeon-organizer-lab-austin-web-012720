@@ -6,6 +6,6 @@ def nyc_pigeon_organizer(data)
   lives = ""
   
   for each in pigeon_names
-    data[:color][]
+    data[:color][:purple]
   
 end
