@@ -1,12 +1,12 @@
 def nyc_pigeon_organizer(data)
   pigeon_names = data[:gender][:male] | data[:gender][:female]
   
-  pigeon = {}
+  pigeons = {}
   color = []
   
   for each in pigeon_names
     pigeon_color = []
-    pigeon[each] = {}
+    pigeons[each] = {}
     
     colors = data[:colors].keys
     for color in colors
@@ -14,7 +14,7 @@ def nyc_pigeon_organizer(data)
         pigeon_color.push(color)
       end
     end
-    pigeon[each][:color] = pigeon_color
+    pigeons[each][:color] = pigeon_color
     
     homes = data[:lives].keys
     for place in homes
