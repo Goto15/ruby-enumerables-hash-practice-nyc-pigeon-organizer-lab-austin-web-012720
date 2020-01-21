@@ -9,23 +9,13 @@ def nyc_pigeon_organizer(data)
     pigeon[each] = {}
     
     colors = data[:colors].keys
+    
     for color in colors
-      if data[color].include?(each)
-        
-    if data[:color][:purple].include?(each)
-      color.push("purple")
+      if data[:color][color].include?(each)
+        pigeon_color.push(color)
+      end
     end
-    if data[:color][:grey].include?(each)
-      color.push("grey")
-    end
-    if data[:color][:white].include?(each)
-      color.push("white")
-    end
-    if data[:color][:brown].include?(each)
-      color.push("brown")
-    end
-      
-    pigeon[each][:color] = color
+    pigeon[each][:color] = pigeon_colorcolor
     
     if data[:lives]["Subway"].include?(each)
       pigeon[each][:lives] = ["Subway"]
