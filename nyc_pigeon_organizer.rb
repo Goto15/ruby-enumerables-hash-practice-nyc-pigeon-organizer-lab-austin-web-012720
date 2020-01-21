@@ -8,6 +8,7 @@ def nyc_pigeon_organizer(data)
     color = []
     pigeon[each] = {}
     
+    colors = data.
     if data[:color][:purple].include?(each)
       color.push("purple")
     end
