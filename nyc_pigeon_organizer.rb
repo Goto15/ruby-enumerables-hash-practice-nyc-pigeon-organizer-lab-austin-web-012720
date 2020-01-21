@@ -1,3 +1,3 @@
 def nyc_pigeon_organizer(data)
-  # write your code here!
+  for each in data[:gender]
 end
