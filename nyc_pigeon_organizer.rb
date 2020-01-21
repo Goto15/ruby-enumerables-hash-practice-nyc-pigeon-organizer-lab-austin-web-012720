@@ -13,4 +13,8 @@ def nyc_pigeon_organizer(data)
       color.push("grey")
     if data[:color][:white].include?(each)
       color.push("white")
+    if data[:color][:brown].include?(each)
+      color.push("brown")
+      
+    
 end
