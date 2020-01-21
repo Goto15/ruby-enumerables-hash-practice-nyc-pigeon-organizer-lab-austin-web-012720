@@ -1,3 +1,5 @@
+require 'pp'
+
 def nyc_pigeon_organizer(data)
   pigeon_names = data[:gender][:male] | data[:gender][:female]
   
@@ -29,6 +31,8 @@ def nyc_pigeon_organizer(data)
       pigeons[each][:gender] = ["female"]
     end 
   end
+  
+  pp pigeons
   
   return pigeons
 end
