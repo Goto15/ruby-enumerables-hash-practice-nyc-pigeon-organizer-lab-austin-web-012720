@@ -19,14 +19,14 @@ def nyc_pigeon_organizer(data)
     homes = data[:lives].keys
     for place in homes
       if data[:lives][place].include?(each)
-        pigeon[:lives] = [place]
+        pigeons[:lives] = [place]
       end
     end
     
     if data[:gender][:male].include?(each)
-      pigeon[each][:gender] = ["male"]
+      pigeons[each][:gender] = ["male"]
     else 
-      pigeon[each][:gender] = ["female"]
+      pigeons[each][:gender] = ["female"]
     end 
   end
   
