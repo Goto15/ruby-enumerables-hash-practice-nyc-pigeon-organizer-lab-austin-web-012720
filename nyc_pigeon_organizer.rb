@@ -5,7 +5,8 @@ def nyc_pigeon_organizer(data)
   color = []
   
   for each in pigeon_names
-    pigeon[each] => {}
+    pigeon[each] = {}
+    
     if data[:color][:purple].include?(each)
       color.push("purple")
     end
