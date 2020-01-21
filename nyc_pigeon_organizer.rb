@@ -1,7 +1,7 @@
 def nyc_pigeon_organizer(data)
   pigeon_names = data[:gender][:male] | data[:gender][:female]
   
-  pigeons = {}
+  pigeon = {}
   color = []
   lives = ""
   
@@ -20,12 +20,13 @@ def nyc_pigeon_organizer(data)
     
     if data[:lives]["Subway"].include?(each)
       pigeon[each][:lives] => ["Subway"]
-    if data[:lives]["Subway"].include?(each)
-      pigeon[each][:lives] => ["Subway"]
-    if data[:lives]["Subway"].include?(each)
-      pigeon[each][:lives] => ["Subway"]
-    if data[:lives]["Subway"].include?(each)
-      pigeon[each][:lives] => ["Subway"]
+    if data[:lives]["Central Park"].include?(each)
+      pigeon[each][:lives] => ["Central Park"]
+    if data[:lives]["Library"].include?(each)
+      pigeon[each][:lives] => ["Library"]
+    if data[:lives]["City Hall"].include?(each)
+      pigeon[each][:lives] => ["City Hall"]
+    end
     
-    
+    return pigeon
 end
