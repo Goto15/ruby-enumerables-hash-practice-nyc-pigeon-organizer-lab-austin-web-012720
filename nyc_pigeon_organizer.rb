@@ -14,20 +14,13 @@ def nyc_pigeon_organizer(data)
         pigeon_color.push(color)
       end
     end
-    pigeon[each][:color] = pigeon_colorcolor
+    pigeon[each][:color] = pigeon_color
     
     homes = data[:lives].keys
-    if data[:lives]["Subway"].include?(each)
-      pigeon[each][:lives] = ["Subway"]
-    end
-    if data[:lives]["Central Park"].include?(each)
-      pigeon[each][:lives] = ["Central Park"]
-    end
-    if data[:lives]["Library"].include?(each)
-      pigeon[each][:lives] = ["Library"]
-    end
-    if data[:lives]["City Hall"].include?(each)
-      pigeon[each][:lives] = ["City Hall"]
+    for place in homes
+      if data[:lives][place].include?(each)
+        pigeon[:lives] = [place]
+      end
     end
     
     if data[:gender][:male].include?(each)
