@@ -20,13 +20,17 @@ def nyc_pigeon_organizer(data)
     
     if data[:lives]["Subway"].include?(each)
       pigeon[each][:lives] => ["Subway"]
+    end
     if data[:lives]["Central Park"].include?(each)
       pigeon[each][:lives] => ["Central Park"]
+    end
     if data[:lives]["Library"].include?(each)
       pigeon[each][:lives] => ["Library"]
+    end
     if data[:lives]["City Hall"].include?(each)
       pigeon[each][:lives] => ["City Hall"]
     end
+    end
     
-    return pigeon
+  return pigeon
 end
