@@ -6,6 +6,7 @@ def nyc_pigeon_organizer(data)
   lives = ""
   
   for each in pigeon_names
+    pigeon[:]
     if data[:color][:purple].include?(each)
   
 end
