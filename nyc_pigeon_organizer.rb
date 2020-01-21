@@ -37,9 +37,9 @@ def nyc_pigeon_organizer(data)
     end
     
     if data[:gender][:male].include?(each)
-      pigeon[each][:gender] = "male"
+      pigeon[each][:gender] = ["male"]
     else 
-      pigeon[each][:gender] = "female"
+      pigeon[each][:gender] = ["female"]
     end 
   end
   
