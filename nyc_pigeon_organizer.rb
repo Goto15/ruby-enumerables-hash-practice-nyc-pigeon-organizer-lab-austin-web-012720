@@ -13,7 +13,7 @@ def nyc_pigeon_organizer(data)
     colors = data[:color].keys
     for color in colors
       if data[:color][color].include?(each)
-        pigeon_color.push(color)
+        pigeon_color.push(color.to_s)
       end
     end
     pigeons[each][:color] = pigeon_color
