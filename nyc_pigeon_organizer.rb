@@ -8,7 +8,7 @@ def nyc_pigeon_organizer(data)
     pigeon_color = []
     pigeons[each] = {}
     
-    colors = data[:colors].keys
+    colors = data[:color].keys
     for color in colors
       if data[:color][color].include?(each)
         pigeon_color.push(color)
