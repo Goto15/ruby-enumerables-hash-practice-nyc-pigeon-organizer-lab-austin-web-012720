@@ -3,7 +3,6 @@ def nyc_pigeon_organizer(data)
   
   pigeons = {}
   
-  for each in pigeon_names
-    data
+  
   
 end
